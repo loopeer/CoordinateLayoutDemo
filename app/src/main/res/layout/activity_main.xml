@@ -18,60 +18,10 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             android:fitsSystemWindows="true"
             app:titleEnabled="false"
-            app:contentScrim="?attr/colorPrimary">
+            app:contentScrim="?attr/colorPrimary"
+            android:background="#EEEEEE">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_scrollFlags="scroll|enterAlways"
-                android:orientation="vertical"
-                >
-
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="sldgj"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:textColor="?android:textColorPrimary"
-                    android:textSize="16sp"
-                    />
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="sldgj"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:textColor="?android:textColorPrimary"
-                    android:textSize="16sp"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="sldgj"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:textColor="?android:textColorPrimary"
-                    android:textSize="16sp"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="sldgj"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:textColor="?android:textColorPrimary"
-                    android:textSize="16sp"
-                    />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/activity_vertical_margin"
-                    android:background="@android:color/darker_gray"/>
-
-            </LinearLayout>
+            <include layout="@layout/view_main_header_content"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -86,7 +36,7 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
 
     </android.support.design.widget.AppBarLayout>
 
